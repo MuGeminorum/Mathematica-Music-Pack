@@ -10,7 +10,7 @@ A macro package for simplification of composition on Mathematica
 
 For tonal modifying operation, numbers are more convenient than note symbols in Mathematica. There is a one-to-one correspondence between notes and integers shown as the left form below.
 
-##### Table 1
+##### Table 1 Note scheme
 
 ![table1](cover/t1.png)
 
@@ -18,13 +18,13 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
 
 We show inputting formats of different effects in the form below.
 
-##### Table 2
+##### Table 2 Input formats
 
 ![table2](cover/t2.png)
 
 With these rules, we can get a concise format of notes.
 
-##### Table 3
+##### Table 3 Simplified codes for effects
 
 ![table3](cover/t3.png)
 
@@ -32,7 +32,7 @@ We save those notes as vectors, let the computer to estimate their types with th
 
 At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limit for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph and the information of each paragraph was previously reserved. The new format of the song is like this.
 
-##### Table 4
+##### Table 4 Song format
 
 ![table4](cover/t4.png)
 
@@ -40,7 +40,7 @@ The information includes the tonality of the paragraph(major or minor and centra
 
 The volume linearly decreases with notes. Information part temporarily contains these properties, its input format follows the rules below.
 
-##### Table 5
+##### Table 5 Information formats
 
 ![table5](cover/t5.png)
 
