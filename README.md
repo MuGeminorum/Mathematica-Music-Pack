@@ -1,5 +1,9 @@
 # mathmusic_macro
 
+[![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
+[![Github All Releases](https://img.shields.io/github/downloads/george-chou/mathmusic_macro/total.svg)](https://github.com/george-chou/mathmusic_macro/releases)
+[![GitHub release](https://img.shields.io/github/release/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/releases/latest)
+
 A macro package for simplification of composition on Mathematica
 
 ## USER MANUAL
@@ -40,4 +44,4 @@ The volume linearly decreases with notes. Information part temporarily contains 
 
 ![table5](cover/t5.png)
 
-For more details, please refer to the demo code `Demo_BWV-1079.nb`.
+For more details, please refer to the demo code `Demo_BWV-1079.nb`; Before compiling songs, please run the macro package first.
