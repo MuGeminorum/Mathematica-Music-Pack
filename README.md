@@ -20,13 +20,13 @@ We show inputting formats of different effects in the form below.
 
 ##### Table 2 Input formats
 
-![table2](cover/t2.png)
+![table2](cover/t2.PNG)
 
 With these rules, we can get a concise format of notes.
 
 ##### Table 3 Simplified codes for effects
 
-![table3](cover/t3.png)
+![table3](cover/t3.PNG)
 
 We save those notes as vectors, let the computer to estimate their types with the accordance of their inputting formats.
 
@@ -34,7 +34,7 @@ At this time, we can change this score paragraph into whichever tonality you wan
 
 ##### Table 4 Song format
 
-![table4](cover/t4.png)
+![table4](cover/t4.PNG)
 
 The information includes the tonality of the paragraph(major or minor and central note), the offset of the paragraph and the speed while paragraph itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
 
@@ -42,6 +42,6 @@ The volume linearly decreases with notes. Information part temporarily contains 
 
 ##### Table 5 Information formats
 
-![table5](cover/t5.png)
+![table5](cover/t5.PNG)
 
 For more details, please refer to the demo code `Demo_BWV-1079.nb`; Before compiling songs, please run the macro package first.
