@@ -11,7 +11,7 @@ A macro package for simplification of composition on Mathematica
 For tonal modifying operation, numbers are more convenient than note symbols in Mathematica. There is a one-to-one correspondence between notes and integers shown as the left form below.
 
 <div align=center>
-    <b>Table 1 Note scheme</b>
+    <b>Table 1: Note scheme</b><br>
     <img width="605" src="cover/t1.png"/>
 </div>
 
@@ -20,14 +20,14 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
 We show inputting formats of different effects in the form below.
 
 <div align=center>
-    <b>Table 2 Input formats</b>
+    <b>Table 2: Input formats</b><br>
     <img width="605" src="cover/t2.PNG"/>
 </div>
 
 With these rules, we can get a concise format of notes.
 
 <div align=center>
-    <b>Table 3 Simplified codes for effects</b>
+    <b>Table 3: Simplified codes for effects</b><br>
     <img width="605" src="cover/t3.PNG"/>
 </div>
 
@@ -36,7 +36,7 @@ We save those notes as vectors, let the computer to estimate their types with th
 At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limit for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph and the information of each paragraph was previously reserved. The new format of the song is like this.
 
 <div align=center>
-    <b>Table 4 Song format</b>
+    <b>Figure 1: Song format</b><br>
     <img width="605" src="cover/t4.PNG"/>
 </div>
 
@@ -45,7 +45,7 @@ The information includes the tonality of the paragraph(major or minor and centra
 The volume linearly decreases with notes. Information part temporarily contains these properties, its input format follows the rules below.
 
 <div align=center>
-    <b>Table 5 Information formats</b>
+    <b>Table 4: Information formats</b><br>
     <img width="605" src="cover/t5.PNG"/>
 </div>
 
