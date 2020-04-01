@@ -33,7 +33,7 @@ With these rules, we can get a concise format of notes.
 
 We save those notes as vectors, let the computer to estimate their types with the accordance of their inputting formats.
 
-At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limit for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph and the information of each paragraph was previously reserved. The new format of the song is like this.
+At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limited for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph, and the information of each section was previously reserved. The new format of the song is like this.
 
 <div align=center>
     <b>Figure 1: Song format</b><br>
