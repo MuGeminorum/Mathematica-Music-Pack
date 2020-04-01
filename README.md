@@ -15,7 +15,7 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
     <img width="605" src="cover/t1.png"/>
 </div>
 
-12-note scheme presents all the notes in absolute format which is unfriendly to us, while people are used to 7 notes from `C` to `B` once the tonality is fixed. The key is to find a map g from 7-note scheme to 12-note scheme so that people can operate in convenient way.
+The 12-note scheme presents all the notes in a simple format, which is unfriendly to us, while people are used to 7 letters from `C` to `B` once the tonality is certain. The key is to find a map from the 7-note scheme to the 12-note scheme so that people can operate an inconvenient way.
 
 We show inputting formats of different effects in the form below.
 
