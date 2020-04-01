@@ -49,4 +49,4 @@ The volume linearly decreases with notes. The information part temporarily conta
     <img width="605" src="cover/t5.PNG"/>
 </div>
 
-For more details, please refer to the demo code `Demo_BWV-1079.nb`; Before compiling songs, please run the macro package first.
+Please refer to the demo code `Demo_BWV-1079.nb` for more details; Before compiling songs, please run the macro package first.
