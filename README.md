@@ -40,9 +40,9 @@ At this time, we can change this score paragraph into whichever tonality you wan
     <img width="605" src="cover/t4.PNG"/>
 </div>
 
-The information includes the tonality of the paragraph(major or minor and central note), the offset of the paragraph and the speed while paragraph itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
+The information includes the tonality of the section(major or minor and central note), the offset of section and speed, while the section itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
 
-The volume linearly decreases with notes. Information part temporarily contains these properties, its input format follows the rules below.
+The volume linearly decreases with notes. The information part temporarily contains these properties, and its input format follows the rules below.
 
 <div align=center>
     <b>Table 4: Information formats</b><br>
