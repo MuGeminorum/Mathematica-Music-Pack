@@ -1,7 +1,7 @@
 # mathmusic_macro
 
 [![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
-![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)
+[![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/mathmusic_macro/actions)
 <!--[![Github All Releases](https://img.shields.io/github/downloads/george-chou/mathmusic_macro/total.svg)](https://github.com/george-chou/mathmusic_macro/releases)
 [![GitHub release](https://img.shields.io/github/release/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/releases/latest)-->
 
