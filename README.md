@@ -1,8 +1,9 @@
 # mathmusic_macro
 
 [![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
-[![Github All Releases](https://img.shields.io/github/downloads/george-chou/mathmusic_macro/total.svg)](https://github.com/george-chou/mathmusic_macro/releases)
-[![GitHub release](https://img.shields.io/github/release/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/releases/latest)
+![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)
+<!--[![Github All Releases](https://img.shields.io/github/downloads/george-chou/mathmusic_macro/total.svg)](https://github.com/george-chou/mathmusic_macro/releases)
+[![GitHub release](https://img.shields.io/github/release/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/releases/latest)-->
 
 A macro package for simplification of composition on Mathematica
 
