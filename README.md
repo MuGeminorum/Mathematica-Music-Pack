@@ -13,7 +13,7 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
 
 <div align=center>
     <b>Table 1: Note scheme</b><br>
-    <img width="605" src=".github/t1.png"/>
+    <img width="500" src=".github/t1.png"/>
 </div>
 
 The 12-note scheme presents all the notes in a simple format, which is unfriendly to us, while people are used to 7 letters from `C` to `B` once the tonality is certain. The key is to find a map from the 7-note scheme to the 12-note scheme so that people can operate an inconvenient way.
@@ -22,7 +22,7 @@ We show inputting formats of different effects in the form below.
 
 <div align=center>
     <b>Table 2: Input formats</b><br>
-    <img width="605" src=".github/t2.PNG"/>
+    <img width="600" src=".github/t2.PNG"/>
 </div>
 
 With these rules, we can get a concise format of notes.
@@ -38,7 +38,7 @@ At this time, we can change this score paragraph into whichever tonality you wan
 
 <div align=center>
     <b>Figure 1: Song format</b><br>
-    <img width="605" src=".github/t4.PNG"/>
+    <img width="600" src=".github/t4.PNG"/>
 </div>
 
 The information includes the tonality of the section(major or minor and central note), the offset of section and speed, while the section itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
@@ -47,7 +47,7 @@ The volume linearly decreases with notes. The information part temporarily conta
 
 <div align=center>
     <b>Table 4: Information formats</b><br>
-    <img width="605" src=".github/t5.PNG"/>
+    <img width="445" src=".github/t5.PNG"/>
 </div>
 
 Please refer to the demo code `Demo_BWV-1079.nb` for more details; Before compiling songs, please run the macro package first.
