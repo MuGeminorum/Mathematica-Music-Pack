@@ -30,9 +30,9 @@ We show inputting formats of different effects in the form below.
 | Rest | *{l}* | *l* is beat number; |
 | Tone | *{n, l}* | *n* is note number; |
 | Chord | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}* | *n<sub>k</sub>* are note numbers of the chord; |
-| Stagato | *{n, {l_1, l_2}}* | *l1* is beat number, *l2* is sound head's duration rate of trill; |
-| Vibrato | *{{n1, n2}, l1, l2}* | *l2* is trill number; |
-| Mordent | *{{n1, n2, ...}, l1, l2}* | *l2* is step's duration rate of total; |
+| Stagato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}* | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is sound head's duration rate of trill; |
+| Vibrato | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is trill number; |
+| Mordent | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is step's duration rate of total; |
 | Tenuto | *{bottom notes, {top notes}}* | Bottom notes can be single tones or chords, top notes can be any type mentioned above. |
 
 With these rules, we can get a concise format of notes.
