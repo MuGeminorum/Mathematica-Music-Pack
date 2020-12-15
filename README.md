@@ -20,10 +20,7 @@ The 12-note scheme presents all the notes in a simple format that is unfriendly 
 
 We show inputting formats of different effects in the form below.
 
-<div align=center>
-    <b>Table 2: Input formats</b><br>
-    <img width="600" src="https://george-chou.github.io/covers/mathmusic_macro/t2.PNG"/>
-</div>
+<div align=center><b>Table 2: Input formats</b><br></div>
 
 | Effect | Format | Remark |
 | --- | --- | --- |
@@ -46,18 +43,31 @@ We save those notes as vectors, let the computer estimate their types according 
 
 At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limited for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph, and the information of each section was previously reserved. The new format of the song is like this.
 
-<div align=center>
-    <b>Figure 1: Song format</b><br>
-    <img width="600" src="https://george-chou.github.io/covers/mathmusic_macro/t4.PNG"/>
-</div>
+```
+song = {
+    {info of paragraph 1},
+    {paragraph 1},
+
+    {info of paragraph 2},
+    {paragraph 2},
+
+    ...
+
+    {info of paragraph n},
+    {paragraph n},
+};
+```
 
 The information includes the tonality of the section(major or minor and central note), the offset of section and speed, while the section itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
 
 The volume linearly decreases with notes. The information part temporarily contains these properties, and its input format follows the rules below.
 
-<div align=center>
-    <b>Table 4: Information formats</b><br>
-    <img width="445" src="https://george-chou.github.io/covers/mathmusic_macro/t5.PNG"/>
-</div>
+<div align=center><b>Table 4: Information formats</b><br></div>
+
+| Format | Remark |
+| --- | --- |
+| *{m, c, s, t}* | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is offset; *t* is beat number per minute; |
+| *{m, c, s, t, v}* | *v* is volume; |
+| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is starting volume; *v<sub>t</sub>* is terminal volume. |
 
 Please refer to the demo code _Demo_BWV-1079.nb_ for more details; Before compiling songs, please run the macro package first.
