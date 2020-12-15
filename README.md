@@ -27,13 +27,13 @@ We show inputting formats of different effects in the form below.
 
 | Effect | Format | Remark |
 | --- | --- | --- |
-| Rest | {l} | l is beat number |
-| Tone | {n, l} | n is note number |
-| Chord | {{n_1, n_2, ...}, l} | n_k are note numbers of the chord |
-| Tone | {n, l} | n is note number |
-| Tone | {n, l} | n is note number |
-| Tone | {n, l} | n is note number |
-| Tone | {n, l} | n is note number |
+| Rest | *{l}* | *l* is beat number; |
+| Tone | *{n, l}* | *n* is note number; |
+| Chord | *{{n_1, n_2, ...}, l}* | *n_k* are note numbers of the chord; |
+| Stagato | *{n, {l_1, l_2}}* | *l1* is beat number, *l2* is sound head's duration rate of trill; |
+| Vibrato | *{{n1, n2}, l1, l2}* | *l2* is trill number; |
+| Mordent | *{{n1, n2, ...}, l1, l2}* | *l2* is step's duration rate of total; |
+| Tenuto | *{bottom notes, {top notes}}* | Bottom notes can be single tones or chords, top notes can be any type mentioned above. |
 
 With these rules, we can get a concise format of notes.
 
