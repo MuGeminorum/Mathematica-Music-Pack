@@ -25,6 +25,16 @@ We show inputting formats of different effects in the form below.
     <img width="600" src="https://george-chou.github.io/covers/mathmusic_macro/t2.PNG"/>
 </div>
 
+| Effect | Format | Remark |
+| --- | --- | --- |
+| Rest | {l} | l is beat number |
+| Tone | {n, l} | n is note number |
+| Chord | {{n_1, n_2, ...}, l} | n_k are note numbers of the chord |
+| Tone | {n, l} | n is note number |
+| Tone | {n, l} | n is note number |
+| Tone | {n, l} | n is note number |
+| Tone | {n, l} | n is note number |
+
 With these rules, we can get a concise format of notes.
 
 <div align=center>
