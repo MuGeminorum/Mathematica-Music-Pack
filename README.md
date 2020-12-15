@@ -29,7 +29,7 @@ We show inputting formats of different effects in the form below.
 | --- | --- | --- |
 | Rest | *{l}* | *l* is beat number; |
 | Tone | *{n, l}* | *n* is note number; |
-| Chord | *{{n_1, n_2, ...}, l}* | *n_k* are note numbers of the chord; |
+| Chord | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}* | *n<sub>k</sub>* are note numbers of the chord; |
 | Stagato | *{n, {l_1, l_2}}* | *l1* is beat number, *l2* is sound head's duration rate of trill; |
 | Vibrato | *{{n1, n2}, l1, l2}* | *l2* is trill number; |
 | Mordent | *{{n1, n2, ...}, l1, l2}* | *l2* is step's duration rate of total; |
