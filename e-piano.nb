@@ -1,0 +1,903 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[     36215,        895]
+NotebookOptionsPosition[     35896,        879]
+NotebookOutlinePosition[     36239,        894]
+CellTagsIndexPosition[     36196,        891]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"dw", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "3"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "7"}], "]"}]}], "]"}], ",", "1", ",", "2"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"w", "[", "n_", "]"}], ":=", 
+    RowBox[{"Which", "[", 
+     RowBox[{
+      RowBox[{"n", "\[LessEqual]", 
+       RowBox[{"-", "1"}]}], ",", 
+      RowBox[{"-", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"dw", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", 
+           RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+      RowBox[{"Sum", "[", 
+       RowBox[{
+        RowBox[{"dw", "[", "k", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",", 
+      "0"}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dh", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "2"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "5"}], "]"}]}], "]"}], ",", "3", ",", "2"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"h", "[", "n_", "]"}], ":=", 
+    RowBox[{"1", "+", 
+     RowBox[{"Which", "[", 
+      RowBox[{
+       RowBox[{"n", "\[LessEqual]", 
+        RowBox[{"-", "1"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          RowBox[{"dh", "[", "k", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+       RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"dh", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",",
+        "0"}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"d", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "2"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "5"}], "]"}]}], "]"}], ",", "2", ",", "1"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", "[", "n_", "]"}], ":=", 
+    RowBox[{"0.5", "+", 
+     RowBox[{"Which", "[", 
+      RowBox[{
+       RowBox[{"n", "\[LessEqual]", 
+        RowBox[{"-", "1"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          RowBox[{"d", "[", "k", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+       RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"d", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",",
+        "0"}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"Graphics", "[", 
+   RowBox[{
+    RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"With", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"i", "=", "i"}], "}"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Button", "[", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"White", ",", 
+              RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+              RowBox[{"Rectangle", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{"i", ",", "0"}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"i", "+", "1"}], ",", "10"}], "}"}]}], "]"}]}], 
+             "}"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"EmitSound", "[", 
+             RowBox[{"Sound", "[", 
+              RowBox[{"SoundNote", "[", 
+               RowBox[{"w", "[", "i", "]"}], "]"}], "]"}], "]"}]}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"i", ",", 
+          RowBox[{"-", "23"}], ",", "28"}], "}"}]}], "]"}], ",", 
+      "\[IndentingNewLine]", "\[IndentingNewLine]", 
+      RowBox[{"Table", "[", 
+       RowBox[{
+        RowBox[{"With", "[", 
+         RowBox[{
+          RowBox[{"{", 
+           RowBox[{"j", "=", "j"}], "}"}], ",", "\[IndentingNewLine]", 
+          RowBox[{"Button", "[", "\[IndentingNewLine]", 
+           RowBox[{
+            RowBox[{"{", 
+             RowBox[{"Black", ",", 
+              RowBox[{"EdgeForm", "[", "White", "]"}], ",", 
+              RowBox[{"Rectangle", "[", 
+               RowBox[{
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{"a", "[", "j", "]"}], ",", 
+                  RowBox[{"15", "-", 
+                   RowBox[{"5", "^", "1.5"}]}]}], "}"}], ",", 
+                RowBox[{"{", 
+                 RowBox[{
+                  RowBox[{
+                   RowBox[{"a", "[", "j", "]"}], "+", "1"}], ",", "10"}], 
+                 "}"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+            RowBox[{"EmitSound", "[", 
+             RowBox[{"Sound", "[", 
+              RowBox[{"SoundNote", "[", 
+               RowBox[{"h", "[", "j", "]"}], "]"}], "]"}], "]"}]}], 
+           "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"j", ",", 
+          RowBox[{"-", "16"}], ",", "19"}], "}"}]}], "]"}]}], "}"}], ",", 
+    "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{"ImageSize", "\[Rule]", "1200"}]}], "]"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]"}], "Input",
+ CellChangeTimes->{{3.698039572742807*^9, 3.6980396271251698`*^9}, {
+   3.6980396603738804`*^9, 3.6980397075489984`*^9}, {3.6980403418030567`*^9, 
+   3.6980403644349966`*^9}, {3.6980404197417173`*^9, 3.698040546459813*^9}, {
+   3.698040692647588*^9, 3.6980407707735925`*^9}, {3.698040898928214*^9, 
+   3.6980409668449135`*^9}, {3.698042247978651*^9, 3.6980424227158003`*^9}, {
+   3.6980428236284924`*^9, 3.6980428415469136`*^9}, {3.698042878756883*^9, 
+   3.6980429240312157`*^9}, {3.698043172362775*^9, 3.6980432203292627`*^9}, {
+   3.6980432768565693`*^9, 3.6980433843629684`*^9}, {3.6980435558787107`*^9, 
+   3.6980435645757513`*^9}, {3.6980436264709663`*^9, 3.698043635747138*^9}, {
+   3.6980437028372498`*^9, 3.698043728089033*^9}, {3.6980446561053705`*^9, 
+   3.6980447353982344`*^9}, {3.698044839904087*^9, 3.6980448908779206`*^9}, {
+   3.698046167887734*^9, 3.6980461733698125`*^9}, {3.698046244116026*^9, 
+   3.698046266454048*^9}, {3.698046387401875*^9, 3.6980464031864*^9}, {
+   3.6980464455351105`*^9, 3.6980464511349883`*^9}, {3.6980469043663054`*^9, 
+   3.6980469754231377`*^9}, {3.698047366772023*^9, 3.698047367135351*^9}, {
+   3.698047429038777*^9, 3.6980474714700527`*^9}, 3.6980475883963165`*^9}],
+
+Cell[BoxData[
+ GraphicsBox[{{
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-23, 0}, {-22, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-23]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-22, 0}, {-21, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-22]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-21, 0}, {-20, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-21]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-20, 0}, {-19, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-20]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-19, 0}, {-18, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-19]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-18, 0}, {-17, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-18]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-17, 0}, {-16, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-17]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-16, 0}, {-15, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-16]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-15, 0}, {-14, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-15]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-14, 0}, {-13, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-14]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-13, 0}, {-12, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-13]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-12, 0}, {-11, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-12]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-11, 0}, {-10, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-11]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-10, 0}, {-9, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-10]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-9, 0}, {-8, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-9]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-8, 0}, {-7, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-8]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-7, 0}, {-6, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-7]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-6, 0}, {-5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-6]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-5, 0}, {-4, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-5]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-4, 0}, {-3, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-4]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-3, 0}, {-2, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-3]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-2, 0}, {-1, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-2]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{-1, 0}, {0, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[-1]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{0, 0}, {1, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[0]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{1, 0}, {2, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[1]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{2, 0}, {3, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[2]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{3, 0}, {4, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[3]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{4, 0}, {5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[4]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{5, 0}, {6, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[5]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{6, 0}, {7, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[6]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{7, 0}, {8, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[7]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{8, 0}, {9, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[8]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{9, 0}, {10, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[9]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{10, 0}, {11, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[10]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{11, 0}, {12, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[11]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{12, 0}, {13, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[12]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{13, 0}, {14, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[13]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{14, 0}, {15, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[14]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{15, 0}, {16, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[15]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{16, 0}, {17, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[16]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{17, 0}, {18, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[17]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{18, 0}, {19, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[18]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{19, 0}, {20, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[19]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{20, 0}, {21, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[20]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{21, 0}, {22, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[21]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{22, 0}, {23, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[22]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{23, 0}, {24, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[23]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{24, 0}, {25, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[24]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{25, 0}, {26, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[25]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{26, 0}, {27, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[26]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{27, 0}, {28, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[27]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[1], EdgeForm[GrayLevel[0]], RectangleBox[{28, 0}, {29, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`w[28]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]]}, {
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-22.5, 3.819660112501051}, {-21.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-16]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-20.5, 3.819660112501051}, {-19.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-15]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-19.5, 3.819660112501051}, {-18.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-14]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-17.5, 3.819660112501051}, {-16.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-13]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-16.5, 3.819660112501051}, {-15.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-12]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-15.5, 3.819660112501051}, {-14.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-11]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-13.5, 3.819660112501051}, {-12.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-10]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-12.5, 3.819660112501051}, {-11.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-9]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-10.5, 3.819660112501051}, {-9.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-8]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-9.5, 3.819660112501051}, {-8.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-7]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-8.5, 3.819660112501051}, {-7.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-6]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-6.5, 3.819660112501051}, {-5.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-5]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-5.5, 3.819660112501051}, {-4.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-4]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-3.5, 3.819660112501051}, {-2.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-3]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-2.5, 3.819660112501051}, {-1.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-2]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{-1.5, 3.819660112501051}, {-0.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[-1]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{0.5, 3.819660112501051}, {1.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[0]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{1.5, 3.819660112501051}, {2.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[1]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{3.5, 3.819660112501051}, {4.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[2]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{4.5, 3.819660112501051}, {5.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[3]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{5.5, 3.819660112501051}, {6.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[4]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{7.5, 3.819660112501051}, {8.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[5]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{8.5, 3.819660112501051}, {9.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[6]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{10.5, 3.819660112501051}, {11.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[7]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{11.5, 3.819660112501051}, {12.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[8]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{12.5, 3.819660112501051}, {13.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[9]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{14.5, 3.819660112501051}, {15.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[10]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{15.5, 3.819660112501051}, {16.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[11]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{17.5, 3.819660112501051}, {18.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[12]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{18.5, 3.819660112501051}, {19.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[13]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{19.5, 3.819660112501051}, {20.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[14]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{21.5, 3.819660112501051}, {22.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[15]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{22.5, 3.819660112501051}, {23.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[16]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{24.5, 3.819660112501051}, {25.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[17]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{25.5, 3.819660112501051}, {26.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[18]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]], 
+    TagBox[
+     {GrayLevel[0], EdgeForm[GrayLevel[1]], 
+      RectangleBox[{26.5, 3.819660112501051}, {27.5, 10}]},
+     EventHandlerTag[{"MouseClicked" :> EmitSound[
+         Sound[
+          SoundNote[
+           $CellContext`h[19]]]], Method -> "Preemptive", PassEventsDown -> 
+       Automatic, PassEventsUp -> True}]]}},
+  ImageSize->1200]], "Output",
+ CellChangeTimes->{
+  3.698040775928694*^9, 3.698040870461175*^9, 3.6980409682127004`*^9, 
+   3.698042264686751*^9, {3.6980424169913683`*^9, 3.6980424244489703`*^9}, 
+   3.6980428430373354`*^9, 3.6980429257097273`*^9, 3.6980433130701504`*^9, 
+   3.698043566548334*^9, 3.6980436391282706`*^9, 3.6980437290637903`*^9, 
+   3.6980446883745403`*^9, 3.698044739975544*^9, {3.698044861207245*^9, 
+   3.69804487000441*^9}, 3.698046174625395*^9, 3.69804627323637*^9, 
+   3.698046403664835*^9, 3.6980464515389023`*^9, 3.698046978100232*^9, 
+   3.698047084502*^9, 3.6980474723932943`*^9, 3.6980475893349624`*^9}]
+}, Open  ]]
+},
+WindowSize->{1366, 685},
+WindowMargins->{{-8, Automatic}, {Automatic, -8}},
+FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 7337, 189, 544, "Input"],
+Cell[7920, 213, 27960, 663, 315, "Output"]
+}, Open  ]]
+}
+]
+*)
+
