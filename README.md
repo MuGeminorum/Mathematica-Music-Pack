@@ -11,7 +11,7 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
 
 <div align=center>
     <b>Table 1: Note scheme</b><br>
-    <img width="500" src="https://george-chou.github.io/covers/mathmusic_macro/t1.png"/>
+    <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
 </div>
 
 The 12-note scheme presents all the notes in a simple format that is unfriendly to us, while people are used to 7 letters from _C_ to _B_ once the tonality is specific. The key is to find a map from the 7-note scheme to the 12-note scheme to operate an inconvenient way.
@@ -34,7 +34,7 @@ With these rules, we can get a concise format of notes.
 
 <div align=center>
     <b>Table 3: Simplified codes for effects</b><br>
-    <img width="605" src="https://george-chou.github.io/covers/mathmusic_macro/t3.PNG"/>
+    <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
 </div>
 
 We save those notes as vectors, let the computer estimate their types according to their inputting formats.
