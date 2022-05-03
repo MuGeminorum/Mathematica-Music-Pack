@@ -26,7 +26,7 @@ We show inputting formats of different effects in the form below.
 | Tone     | *{n, l}*                                                              | *n* is note number;                                                            |
 | Chord    | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}*                            | *n<sub>k</sub>* are note numbers of the chord;                                 |
 | Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is the ratio of real duration; |
-| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, l<sub>2</sub>}*      | *l<sub>2</sub>* is trill number;                                               |
+| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>}* is trill number;                                               |
 | Arpeggio | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is  the ratio of real duration;                                |
 | Tenuto   | *{bottom notes, {top notes}}*                                         | Bottom notes can be tones or chords, top note can be any above type.           |
 
