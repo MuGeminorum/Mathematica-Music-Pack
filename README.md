@@ -35,7 +35,9 @@ One section consists of an info part and a note part, the info part includes 4 r
 | *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is volume at the beginning; *v<sub>t</sub>* is volume at the end.                                                                                  |
 
 The central note list is as follow:
+
 <div align=center><b>Table 2: Central note list</b><br></div>
+
 | C   | C#/Db | D   | Eb/D# | E   | F   | F#/Gb | G   | Ab/G# | A   | Bb/A# | B   |
 | --- | ----- | --- | ----- | --- | --- | ----- | --- | ----- | --- | ----- | --- |
 | 0   | 1     | 2   | 3     | 4   | 5   | 6     | 7   | 8     | 9   | 10    | 11  |
