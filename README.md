@@ -3,7 +3,7 @@
 [![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
 [![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/mathmusic_macro/actions)
 
-A macro package for simplification of composition on Mathematica
+A macro package for simplifying composition on Mathematica
 
 ## User manual
 
@@ -24,9 +24,9 @@ song = {
 };
 ```
 
-One section consists of an info part and a note part, the info part includes 4 required params(tonality, central note, transposition, tempo) and one optional param(volume or volume change); while the note part contains melodies and chords. The info part follows below format rules:
+One section consists of an info part and a note part, the info part includes 4 required params(tonality, central note, transposition, tempo) and one optional param(volume number or volume change vector); While the note part contains melodies and chords. The info part follows below format rules:
 
-<div align=center><b>Table 4: Info part format</b><br></div>
+<div align=center><b>Table 1: Info part format</b><br></div>
 
 | Format                                         | Remark                                                                                                                                                             |
 | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -35,13 +35,14 @@ One section consists of an info part and a note part, the info part includes 4 r
 | *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is volume at the beginning; *v<sub>t</sub>* is volume at the end.                                                                                  |
 
 The central note list is as follow:
+<div align=center><b>Table 2: Central note list</b><br></div>
 | C   | C#/Db | D   | Eb/D# | E   | F   | F#/Gb | G   | Ab/G# | A   | Bb/A# | B   |
 | --- | ----- | --- | ----- | --- | --- | ----- | --- | ----- | --- | ----- | --- |
 | 0   | 1     | 2   | 3     | 4   | 5   | 6     | 7   | 8     | 9   | 10    | 11  |
 
 The note part has melodies and chords, which consists of different kinds of notes:
 
-<div align=center><b>Table 2: Input formats of notes</b><br></div>
+<div align=center><b>Table 3: Input formats of notes</b><br></div>
 
 | Effect   | Format                                                                | Remark                                                                         |
 | -------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -56,18 +57,17 @@ The note part has melodies and chords, which consists of different kinds of note
 With these rules, we can get a concise format of notes.
 
 <div align=center>
-    <b>Table 3: Sound effect demos</b><br>
+    <b>Table 4: Sound effect demos</b><br>
     <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
 </div>
 
 For notes in the note part, using 12-note scheme is unfriendly to us, it can be transferred into 7-note scheme from _C_ to _B_ once the tonality is fixed:
 
 <div align=center>
-    <b>Table 1: Note scheme</b><br>
+    <b>Table 5: Note scheme</b><br>
     <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
 </div>
 
-Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.vercel.app/> for more details; 
-Before compiling songs, please run the macro package first.
+Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.vercel.app> for more details; Before compiling songs, please run the macro package first.
 
 Besides, the `e-piano.nb` is a piano keyboard UI code, you can play it as a virtual piano on software.
