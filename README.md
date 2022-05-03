@@ -20,15 +20,15 @@ We show inputting formats of different effects in the form below.
 
 <div align=center><b>Table 2: Input formats</b><br></div>
 
-| Effect | Format | Remark |
-| --- | --- | --- |
-| Rest | *{l}* | *l* is beat number; |
-| Tone | *{n, l}* | *n* is note number; |
-| Chord | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}* | *n<sub>k</sub>* are note numbers of the chord; |
-| Stagato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}* | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is sound head's duration rate of total; |
-| Vibrato | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is trill number; |
-| Mordent | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is step's duration rate of total; |
-| Tenuto | *{bottom notes, {top notes}}* | Bottom notes can be single tones or chords, top notes can be any type mentioned above. |
+| Effect   | Format                                                                | Remark                                                                         |
+| -------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| Rest     | *{l}*                                                                 | *l* is beat number;                                                            |
+| Tone     | *{n, l}*                                                              | *n* is note number;                                                            |
+| Chord    | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}*                            | *n<sub>k</sub>* are note numbers of the chord;                                 |
+| Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is the ratio of real duration; |
+| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, l<sub>2</sub>}*      | *l<sub>2</sub>* is trill number;                                               |
+| Arpeggio | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is  the ratio of real duration;                                |
+| Tenuto   | *{bottom notes, {top notes}}*                                         | Bottom notes can be tones or chords, top note can be any above type.           |
 
 With these rules, we can get a concise format of notes.
 
@@ -62,10 +62,15 @@ The volume linearly decreases with notes. The information part temporarily conta
 
 <div align=center><b>Table 4: Information formats</b><br></div>
 
-| Format | Remark |
-| --- | --- |
-| *{m, c, s, t}* | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is offset; *t* is beat number per minute; |
-| *{m, c, s, t, v}* | *v* is volume; |
-| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is starting volume; *v<sub>t</sub>* is terminal volume. |
+| Format                                         | Remark                                                                                                                              |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is transposition; *t* is tempo(the number = a quarter note); |
+| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                      |
+| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is volume at the beginning; *v<sub>t</sub>* is volume at the end.                                                   |
 
-Please refer to the demo code _Demo_BWV-1079.nb_ for more details; Before compiling songs, please run the macro package first.
+The central note list is as follow:
+| C   | C#/Db | D   | Eb/D# | E   | F   | F#/Gb | G   | Ab/G# | A   | Bb/A# | B   |
+| --- | ----- | --- | ----- | --- | --- | ----- | --- | ----- | --- | ----- | --- |
+| 0   | 1     | 2   | 3     | 4   | 5   | 6     | 7   | 8     | 9   | 10    | 11  |
+
+Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library<https://mathmusic.vercel.app/> for more details; Before compiling songs, please run the macro package first.
