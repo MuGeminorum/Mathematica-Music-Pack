@@ -14,11 +14,9 @@ For tonal modifying operation, numbers are more convenient than note symbols in 
     <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
 </div>
 
-The 12-note scheme presents all the notes in a simple format that is unfriendly to us, while people are used to 7 letters from _C_ to _B_ once the tonality is specific. The key is to find a map from the 7-note scheme to the 12-note scheme to operate an inconvenient way.
+The 12-note scheme is unfriendly to us, it can be transferred into 7-note scheme from _C_ to _B_ once the tonality is fixed. The 7-note scheme is more convenient for us.
 
-We show inputting formats of different effects in the form below.
-
-<div align=center><b>Table 2: Input formats</b><br></div>
+<div align=center><b>Table 2: Input formats of notes</b><br></div>
 
 | Effect   | Format                                                                | Remark                                                                         |
 | -------- | --------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
@@ -26,20 +24,18 @@ We show inputting formats of different effects in the form below.
 | Tone     | *{n, l}*                                                              | *n* is note number;                                                            |
 | Chord    | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}*                            | *n<sub>k</sub>* are note numbers of the chord;                                 |
 | Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is the ratio of real duration; |
-| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>}* is trill number;                                               |
+| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>}* is trill number;                                              |
 | Arpeggio | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is  the ratio of real duration;                                |
 | Tenuto   | *{bottom notes, {top notes}}*                                         | Bottom notes can be tones or chords, top note can be any above type.           |
 
 With these rules, we can get a concise format of notes.
 
 <div align=center>
-    <b>Table 3: Simplified codes for effects</b><br>
+    <b>Table 3: Sound effect demos</b><br>
     <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
 </div>
 
-We save those notes as vectors, let the computer estimate their types according to their inputting formats.
-
-At this time, we can change this score paragraph into whichever tonality you want by replacing the first and the second variate in the function. And you can move the whole song up or down by altering the third variable. But this is still limited for those songs within parts in different tonalities. So, I tried to expend the song vector, let them hold not only one paragraph, and the information of each section was previously reserved. The new format of the song is like this:
+A complete song has many sections, its format is as follow:
 
 ```
 song = {
@@ -56,17 +52,15 @@ song = {
 };
 ```
 
-The information includes the tonality of the section(major or minor and central note), the offset of section and speed, while the section itself contains notes. I took advantage of this occasion, added some new properties such as volume and volume gradient.
+One section consists of an info part and a note part, the info part includes 4 required params(tonality, central note, transposition, tempo) and one optional param(volume or volume change); while the note part contains melodies and chords. The info part follows below format rules:
 
-The volume linearly decreases with notes. The information part temporarily contains these properties, and its input format follows the rules below.
+<div align=center><b>Table 4: Info part format</b><br></div>
 
-<div align=center><b>Table 4: Information formats</b><br></div>
-
-| Format                                         | Remark                                                                                                                              |
-| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
-| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is transposition; *t* is tempo(the number = a quarter note); |
-| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                      |
-| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is volume at the beginning; *v<sub>t</sub>* is volume at the end.                                                   |
+| Format                                         | Remark                                                                                                                                                |
+| ---------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is transposition(Aborted function); *t* is tempo(the number = a quarter note); |
+| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                                        |
+| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | *v<sub>s</sub>* is volume at the beginning; *v<sub>t</sub>* is volume at the end.                                                                     |
 
 The central note list is as follow:
 | C   | C#/Db | D   | Eb/D# | E   | F   | F#/Gb | G   | Ab/G# | A   | Bb/A# | B   |
