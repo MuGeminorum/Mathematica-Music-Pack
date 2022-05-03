@@ -73,4 +73,7 @@ The central note list is as follow:
 | --- | ----- | --- | ----- | --- | --- | ----- | --- | ----- | --- | ----- | --- |
 | 0   | 1     | 2   | 3     | 4   | 5   | 6     | 7   | 8     | 9   | 10    | 11  |
 
-Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library<https://mathmusic.vercel.app/> for more details; Before compiling songs, please run the macro package first.
+Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.vercel.app/> for more details; 
+Before compiling songs, please run the macro package first.
+
+Besides, the `e-piano.nb` is a piano keyboard UI code, you can play it as a virtual piano on software.
