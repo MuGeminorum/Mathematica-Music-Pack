@@ -10,24 +10,19 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     56165,       1425]
-NotebookOptionsPosition[     55920,       1412]
-NotebookOutlinePosition[     56263,       1427]
-CellTagsIndexPosition[     56220,       1424]
+NotebookDataLength[     56228,       1424]
+NotebookOptionsPosition[     55858,       1409]
+NotebookOutlinePosition[     56271,       1426]
+CellTagsIndexPosition[     56228,       1423]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
 Cell[BoxData[
  RowBox[{" ", 
-  RowBox[{"(*", 
+  RowBox[{"(*", "\[IndentingNewLine]", "\t", 
    RowBox[{
-    RowBox[{"\[Copyright]2012", "-", 
-     RowBox[{"2020", " ", "George", " ", 
-      RowBox[{"Chou", ".", " ", "All"}], " ", "Rights", " ", 
-      RowBox[{
-      "Reserved", ".", "\[IndentingNewLine]", "\[IndentingNewLine]", "Step"}],
-       " ", "1"}]}], ":", 
+    RowBox[{"Step", " ", "1"}], ":", 
     RowBox[{
      RowBox[{"Compile", " ", "by", " ", "Shift"}], "+", 
      RowBox[{
@@ -1153,12 +1148,12 @@ Cell[BoxData[
     RowBox[{
      RowBox[{"player", "[", 
       RowBox[{"S1_", ",", "T1_", ",", 
-       RowBox[{"S2_:", "1"}], ",", 
-       RowBox[{"T2_:", "1"}], ",", 
-       RowBox[{"S3_:", "1"}], ",", 
-       RowBox[{"T3_:", "1"}], ",", 
-       RowBox[{"S4_:", "1"}], ",", 
-       RowBox[{"T4_:", "1"}]}], "]"}], ":=", 
+       RowBox[{"S2_", ":", "1"}], ",", 
+       RowBox[{"T2_", ":", "1"}], ",", 
+       RowBox[{"S3_", ":", "1"}], ",", 
+       RowBox[{"T3_", ":", "1"}], ",", 
+       RowBox[{"S4_", ":", "1"}], ",", 
+       RowBox[{"T4_", ":", "1"}]}], "]"}], ":=", 
      RowBox[{"play", "[", 
       RowBox[{
       "S1", ",", "T1", ",", "S2", ",", "T2", ",", "S3", ",", "T3", ",", "S4", 
@@ -1408,12 +1403,16 @@ Cell[BoxData[
  CellChangeTimes->{{3.7942948751991854`*^9, 3.794294960970684*^9}, {
   3.79429527509385*^9, 3.794295311836404*^9}, {3.794295567798401*^9, 
   3.7942955748334002`*^9}, {3.7942958311569996`*^9, 3.7942958533401165`*^9}, {
-  3.7942959758520393`*^9, 3.794296006620781*^9}}]
+  3.7942959758520393`*^9, 3.794296006620781*^9}, {3.8606200090807233`*^9, 
+  3.8606200150802927`*^9}},ExpressionUUID->"2b556376-541b-424c-aef3-\
+87b58b922168"]
 },
 WindowSize->{775, 657},
 WindowMargins->{{372, Automatic}, {Automatic, 54}},
-FrontEndVersion->"11.0 for Microsoft Windows (64-bit) (July 28, 2016)",
-StyleDefinitions->"Default.nb"
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"73fc38d9-f59e-4cda-a803-08c3d93f1237"
 ]
 (* End of Notebook Content *)
 
@@ -1426,7 +1425,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 55358, 1390, 4648, "Input"]
+Cell[558, 20, 55296, 1387, 6790, "Input",ExpressionUUID->"2b556376-541b-424c-aef3-87b58b922168"]
 }
 ]
 *)
