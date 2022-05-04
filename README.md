@@ -11,16 +11,16 @@ We use vectors and numbers to replace complicated SoundNote functions. A complet
 
 ```
 song = {
-    {info of paragraph 1},
-    {paragraph 1},
+    {info part of section 1},
+    {note part of section 1},
 
-    {info of paragraph 2},
-    {paragraph 2},
+    {info part of section 2},
+    {note part of section 2},
 
     ...
 
-    {info of paragraph n},
-    {paragraph n},
+    {info part of section n},
+    {note part of section n},
 };
 ```
 
@@ -63,13 +63,13 @@ With these rules, we can get a concise format of notes.
     <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
 </div>
 
-For notes in the note part, using 12-note scheme is unfriendly to us, it can be transferred into 7-note scheme from _C_ to _B_ once the tonality is fixed:
+For notes in the note part, 12-note scheme is unfriendly to us, it can be transferred into 7-note scheme once the tonality is fixed:
 
 <div align=center>
-    <b>Table 5: Note scheme</b><br>
+    <b>Table 5: The 12-note scheme(left) & 7-note scheme(right)</b><br>
     <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
 </div>
 
 Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.vercel.app> for more details; Before compiling songs, please run the macro package first.
 
-Besides, the `e-piano.nb` is a piano keyboard UI code, you can play it as a virtual piano on software.
+Besides, the `e-piano.nb` is a piano keyboard UI, you can play it as a virtual piano on Mathematica.
