@@ -28,11 +28,11 @@ One section consists of an info part and a note part, the info part includes 4 r
 
 <div align=center><b>Table 1: Info part format</b><br></div>
 
-| Format                                         | Remark                                                                                                                                                             |
-| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]); *s* is transposition(Aborted function, usually = 0); *t* is tempo(the number = a quarter note); |
-| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                                                     |
-| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | Volume fades from *v<sub>s</sub>* to *v<sub>t</sub>*                                                                                                               |
+| <div style="width:120px;">Format</div>         | Remark                                                                                                                                                                   |
+| ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor); *c* is central note integer([0, 11]);<br>*s* is transposition(Aborted function, usually = 0);<br>*t* is tempo(the number = a quarter note); |
+| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                                                           |
+| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | Volume fades from *v<sub>s</sub>* to *v<sub>t</sub>*                                                                                                                     |
 
 The central note list is as follow:
 
@@ -52,7 +52,7 @@ The note part has melodies and chords, which consists of different kinds of note
 | Tone     | *{n, l}*                                                              | *n* is note number;                                                            |
 | Chord    | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}*                            | *n<sub>k</sub>* are note numbers of the chord;                                 |
 | Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is the ratio of real duration; |
-| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>}* is trill number;                                              |
+| Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>* is trill number;                                               |
 | Arpeggio | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is the ratio of real duration;                                 |
 | Tenuto   | *{bottom notes, {top notes}}*                                         | Bottom notes can be tones or chords, top note can be any above type.           |
 
