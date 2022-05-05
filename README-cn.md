@@ -50,7 +50,7 @@ song = {
 | 跳音                                  | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* 为时值, *l<sub>2</sub>* 为缩短后时值占真实时值比率 |
 | 颤音                                  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>* 为抖动次数                                         |
 | 波音                                  | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* 为琶音变化时值占真总时值比率                       |
-| 延音                                  | <div style="width:150px;">*{背景音, {主题旋律}}</div>*                | 背景音可由音符或和弦组成, 主题旋律可以是上述任何类型               |
+| 延音                                  | <div style="width:150px;">*{背景音, {主题旋律}}*</div>                | 背景音可由音符或和弦组成, 主题旋律可以是上述任何类型               |
 
 根据以上规则，给出以下音效示例：
 
