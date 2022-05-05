@@ -1,11 +1,9 @@
-# mathmusic_macro
+# Mathematica 作曲简化包
 
 [![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
 [![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/mathmusic_macro/actions)
 
-Mathematica 作曲简化包
-
-## User manual
+## 用户手册
 
 我们使用向量和数字来代替复杂的 SoundNote 系列函数。 经简化后的一首完整歌曲格式如下：
 
