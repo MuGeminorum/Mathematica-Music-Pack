@@ -7,7 +7,7 @@ A macro package for simplifying composition on Mathematica
 
 ## User manual
 
-We use vectors and numbers to replace complicated SoundNote functions. A complete song has many sections, its format is as follow:
+We use vectors and numbers to replace complicated SoundNote[] functions. A complete song has many sections, its format is as follow:
 
 ```
 song = {
