@@ -20,7 +20,7 @@ song = {
     ...
 
     {info part of section n},
-    {note part of section n},
+    {note part of section n}
 };
 ```
 
@@ -51,7 +51,7 @@ The note part has melodies and chords, which consists of different kinds of note
 | Rest     | *{l}*                                                                 | *l* is duration;                                                     |
 | Tone     | *{n, l}*                                                              | *n* is note value;                                                   |
 | Chord    | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l}*                            | *n<sub>k</sub>* are chord note values;                               |
-| Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is beat number, *l<sub>2</sub>* is duration ratio;   |
+| Staccato | *{n, {l<sub>1</sub>, l<sub>2</sub>}}*                                 | *l<sub>1</sub>* is real duration, *l<sub>2</sub>* is duration ratio; |
 | Vibrato  | *{{n<sub>1</sub>, n<sub>2</sub>}, l<sub>1</sub>, t<sub>n</sub>}*      | *t<sub>n</sub>* is trill number;                                     |
 | Arpeggio | *{{n<sub>1</sub>, n<sub>2</sub>, ...}, l<sub>1</sub>, l<sub>2</sub>}* | *l<sub>2</sub>* is duration ratio;                                   |
 | Tenuto   | *{bottom notes, {top notes}}*                                         | Bottom notes can be tones or chords, top note can be any above type. |
