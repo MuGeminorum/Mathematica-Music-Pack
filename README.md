@@ -1,7 +1,7 @@
-# mathmusic_macro
+# Mathematica-Music-Pack
 
-[![license](https://img.shields.io/github/license/george-chou/mathmusic_macro.svg)](https://github.com/george-chou/mathmusic_macro/blob/master/LICENSE)
-[![CI](https://github.com/george-chou/mathmusic_macro/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/mathmusic_macro/actions)
+[![license](https://img.shields.io/github/license/george-chou/Mathematica-Music-Pack.svg)](https://github.com/george-chou/Mathematica-Music-Pack/blob/master/LICENSE)
+[![CI](https://github.com/george-chou/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/Mathematica-Music-Pack/actions)
 
 A macro package for simplifying composition on Mathematica
 
@@ -60,14 +60,14 @@ With these rules, we can get a concise format of notes.
 
 <div align=center>
     <b>Table 4: Sound effect demos</b><br>
-    <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
+    <img width="605" src="https://george-chou-github-io.vercel.app/covers/Mathematica-Music-Pack/t3.PNG"/>
 </div>
 
 For notes in the note part, 12-note scheme is unfriendly to us, it can be transferred into 7-note scheme once the tonality is fixed:
 
 <div align=center>
     <b>Table 5: The 12-note scheme(left) & 7-note scheme(right)</b><br>
-    <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
+    <img width="500" src="https://george-chou-github-io.vercel.app/covers/Mathematica-Music-Pack/t1.png"/>
 </div>
 
 Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.vercel.app> for more details; Before compiling songs, please run the macro package first.
