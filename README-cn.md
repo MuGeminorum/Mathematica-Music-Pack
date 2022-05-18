@@ -56,14 +56,14 @@ song = {
 
 <div align=center>
     <b>表 4: 音效示例</b><br>
-    <img width="605" src="https://george-chou-github-io.vercel.app/covers/Mathematica-Music-Pack/t3.PNG"/>
+    <img width="605" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t3.PNG"/>
 </div>
 
 对于乐谱域的音符，12音模式使用起来并不方便，一旦调性固定，可将其转为7音模式：
 
 <div align=center>
     <b>表 5: 12音模式(左) 与 7音模式(右)</b><br>
-    <img width="500" src="https://george-chou-github-io.vercel.app/covers/Mathematica-Music-Pack/t1.png"/>
+    <img width="500" src="https://george-chou-github-io.vercel.app/covers/mathmusic_macro/t1.png"/>
 </div>
 
 可参考示例代码 _Demo_BWV-1079.nb_ 或浏览<a href="https://mathmusic.vercel.app" target="_blank">我的 Mathematica 音乐库</a>来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
