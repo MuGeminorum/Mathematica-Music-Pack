@@ -31,7 +31,7 @@ One section consists of an info part and a note part, the info part includes 4 r
 | <div style="width:120px;">Format</div>         | Remark                                                                                                                                                                      |
 | ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor);<br>*c* is central note integer([0, 11]);<br>*s* is transposition(Aborted function, usually = 0);<br>*t* is tempo(the number = a quarter note); |
-| *{m, c, s, t, v}*                              | *v* is volume;                                                                                                                                                              |
+| *{m, c, s, t, v}*                              | *v* is volume([0, 1]);                                                                                                                                                      |
 | *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | Volume fades from *v<sub>s</sub>* to *v<sub>t</sub>*                                                                                                                        |
 
 The central note list is as follow:
