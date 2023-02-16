@@ -22,6 +22,7 @@ song = {
     {info part of section n},
     {note part of section n}
 };
+player[song, soundfont]
 ```
 
 One section consists of an info part and a note part, the info part includes 4 required params(tonality, central note, transposition, tempo) and one optional param(volume number or volume change vector); While the note part contains melodies and chords. The info part follows below format rules:
