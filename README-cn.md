@@ -62,7 +62,7 @@ song = {
 对于乐谱域的音符，12音模式使用起来并不方便，一旦调性固定，可将其转为7音模式：
 
 <div align=center>
-    <b>表 5: 12音模式(左) 与 7音模式(右)</b><br>
+    <b>表 5: (左)12音模式 与 (右)7音模式</b><br>
     <img width="500" src="https://picrepo.netlify.app/Mathematica-Music-Pack/t1.png"/>
 </div>
 
