@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    530808,       9180]
-NotebookOptionsPosition[    530435,       9165]
-NotebookOutlinePosition[    530850,       9182]
-CellTagsIndexPosition[    530807,       9179]
+NotebookDataLength[    530936,       9183]
+NotebookOptionsPosition[    530563,       9168]
+NotebookOutlinePosition[    530978,       9185]
+CellTagsIndexPosition[    530935,       9182]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -1309,10 +1309,12 @@ Cell[BoxData[
          "\[IndentingNewLine]", "]"}]}]}], "\[IndentingNewLine]", "]"}]}], 
     ";"}], "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{
-   "Print", "[", "\"\<Macro Initialized, please run a song.\>\"", "]"}], 
-   "\[IndentingNewLine]", 
-   GraphicsBox[
-    TagBox[RasterBox[CompressedData["
+    RowBox[{
+    "Print", "[", "\"\<Macro Initialized, please run a song.\>\"", "]"}], 
+    ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    GraphicsBox[
+     TagBox[RasterBox[CompressedData["
 1:eJzs/QeUFEX3x40TdkHJAibAHBBJZswEAwgoiOScc5AcBSRIBgNZlIyICEgO
 AgKSc0YJBrJkFtg40//P9N2+1HbPrujz/533fZ+n75kzp6enurrq5m9VdfVD
 9dtUaJwmVapU7W/jq0K9zsXbtavX9YNs/KjUun2zJq0bNXyndYdGTRq1e7F+
@@ -9143,25 +9145,26 @@ hDh3joiIiIiIWCjE2VmXt/0Ol05ERERERIg4d47oBkTPJCIi4o7FHW4Au7zt
 ce4cERERUSAW+4pxnDtHRERERERERERERERERMyNOHeOiIiIiIiIiIiIiIiI
 iJgbce4cERERERERERERERERETE34tw5IiIiIiIiIiIiIiIiImJuxLlzRERE
 RERERERERERERMTc+D+mJTLJ
-      "], {{0, 310.2}, {780., 0}}, {0, 255},
-      ColorFunction->RGBColor,
-      ImageResolution->{120., 120.}],
-     BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
-     Selectable->False],
-    DefaultBaseStyle->"ImageGraphics",
-    ImageSize->{1040.4000000000049`, Automatic},
-    ImageSizeRaw->{780., 310.2},
-    PlotRange->{{0, 780.}, {0, 310.2}}]}]}]], "Input",
+       "], {{0, 310.2}, {780., 0}}, {0, 255},
+       ColorFunction->RGBColor,
+       ImageResolution->{120., 120.}],
+      BoxForm`ImageTag["Byte", ColorSpace -> "RGB", Interleaving -> True],
+      Selectable->False],
+     DefaultBaseStyle->"ImageGraphics",
+     ImageSize->{1027.200000000005, Automatic},
+     ImageSizeRaw->{780., 310.2},
+     PlotRange->{{0, 780.}, {0, 310.2}}], ";"}]}]}]], "Input",
  CellChangeTimes->{{3.7942948751991854`*^9, 3.794294960970684*^9}, {
-  3.79429527509385*^9, 3.794295311836404*^9}, {3.794295567798401*^9, 
-  3.7942955748334002`*^9}, {3.7942958311569996`*^9, 3.7942958533401165`*^9}, {
-  3.7942959758520393`*^9, 3.794296006620781*^9}, {3.8606200090807233`*^9, 
-  3.8606200150802927`*^9}, {3.885442405777253*^9, 3.8854424474749546`*^9}, {
-  3.8854425047346315`*^9, 3.8854425219782066`*^9}, {3.885442555345932*^9, 
-  3.8854425758711033`*^9}, {3.8854950403619075`*^9, 3.8854950407741127`*^9}, {
-  3.8854953427014265`*^9, 
-  3.8854953434783707`*^9}},ExpressionUUID->"2b556376-541b-424c-aef3-\
-87b58b922168"]
+   3.79429527509385*^9, 3.794295311836404*^9}, {3.794295567798401*^9, 
+   3.7942955748334002`*^9}, {3.7942958311569996`*^9, 
+   3.7942958533401165`*^9}, {3.7942959758520393`*^9, 3.794296006620781*^9}, {
+   3.8606200090807233`*^9, 3.8606200150802927`*^9}, {3.885442405777253*^9, 
+   3.8854424474749546`*^9}, {3.8854425047346315`*^9, 
+   3.8854425219782066`*^9}, {3.885442555345932*^9, 3.8854425758711033`*^9}, {
+   3.8854950403619075`*^9, 3.8854950407741127`*^9}, {3.8854953427014265`*^9, 
+   3.8854953434783707`*^9}, 3.885496650541414*^9, 3.885496838826602*^9},
+ CellLabel->
+  "In[259]:=",ExpressionUUID->"2b556376-541b-424c-aef3-87b58b922168"]
 },
 WindowSize->{1141.2, 574.8},
 WindowMargins->{{0, Automatic}, {Automatic, 0}},
@@ -9181,7 +9184,7 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
-Cell[558, 20, 529873, 9143, 6041, "Input",ExpressionUUID->"2b556376-541b-424c-aef3-87b58b922168"]
+Cell[558, 20, 530001, 9146, 6035, "Input",ExpressionUUID->"2b556376-541b-424c-aef3-87b58b922168"]
 }
 ]
 *)
