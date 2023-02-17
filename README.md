@@ -43,13 +43,13 @@ player[track1, soundfont1, track2, soundfont2, ...]
 
 One section consists of an info part and a note part, the info part includes 4 required params(tonality, central note, transposition, tempo) and one optional param(volume number or volume change vector); While the note part contains melodies and chords. The info part follows below format rules:
 
-<div align=center><b>Table 1: Info part format</b><br></div>
+<div align=center><b>Table 1: Param part format</b><br></div>
 
-| <div style="width:120px;">Format</div>         | Remark                                                                                                                                                                      |
-| ---------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor);<br>*c* is central note integer([0, 11]);<br>*s* is transposition(Aborted function, usually = 0);<br>*t* is tempo(the number = a quarter note); |
-| *{m, c, s, t, v}*                              | *v* is volume([0, 1]);                                                                                                                                                      |
-| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | Volume fades from *v<sub>s</sub>* to *v<sub>t</sub>*                                                                                                                        |
+| <div style="width:120px;">Format</div>         | Remark                                                                                                                                                                             |
+| ---------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| *{m, c, s, t}*                                 | *m* is 0(major) or 1(minor);<br>*c* is central note integer([0, 11]);<br>*s* is transposition(The whole piece moves up s semitones);<br>*t* is tempo(the number = a quarter note); |
+| *{m, c, s, t, v}*                              | *v* is volume([0, 1]);                                                                                                                                                             |
+| *{m, c, s, t, {v<sub>s</sub>, v<sub>t</sub>}}* | Volume fades from *v<sub>s</sub>* to *v<sub>t</sub>*                                                                                                                               |
 
 The central note list is as follow:
 
