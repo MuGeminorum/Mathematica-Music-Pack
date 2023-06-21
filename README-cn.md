@@ -73,16 +73,16 @@ player[track1, 音色1, track2, 音色2, ...]
 
 <div align=center>
     <b>表 4: 音效示例</b><br>
-    <img width="605" src="https://picrepo.netlify.app/Mathematica-Music-Pack/t3.PNG"/>
+    <img width="605" src="https://user-images.githubusercontent.com/20459298/233112536-f5b900e8-8201-4e9b-9672-43f99b2979f3.PNG"/>
 </div>
 
 对于乐谱域的音符，12音模式使用起来并不方便，一旦调性固定，可将其转为7音模式：
 
 <div align=center>
     <b>表 5: (左)12音模式 与 (右)7音模式</b><br>
-    <img width="500" src="https://picrepo.netlify.app/Mathematica-Music-Pack/t1.png"/>
+    <img width="500" src="https://user-images.githubusercontent.com/20459298/233112569-3efd5cb1-87c3-44a6-b74b-357104055dd3.png"/>
 </div>
 
-可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mathmusic.netlify.app" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
+可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mathmusic.pages.dev" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
 
 另外，`e-piano.nb` 是一个编写于 Mathematica 上的钢琴键盘，可作为虚拟钢琴来弹奏。
