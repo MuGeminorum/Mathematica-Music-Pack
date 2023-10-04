@@ -1,7 +1,7 @@
 # Mathematica 编曲简化宏包
 
-[![license](https://img.shields.io/github/license/george-chou/Mathematica-Music-Pack.svg)](https://github.com/george-chou/Mathematica-Music-Pack/blob/master/LICENSE)
-[![CI](https://github.com/george-chou/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/george-chou/Mathematica-Music-Pack/actions)
+[![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/master/LICENSE)
+[![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions)
 
 ## 用户手册
 
