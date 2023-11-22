@@ -1,5 +1,4 @@
 # Mathematica 编曲简化宏包
-
 [![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/master/LICENSE)
 [![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions)
 
@@ -83,6 +82,6 @@ player[track1, 音色1, track2, 音色2, ...]
     <img width="500" src="https://user-images.githubusercontent.com/20459298/233112569-3efd5cb1-87c3-44a6-b74b-357104055dd3.png"/>
 </div>
 
-可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mathmusic.pages.dev" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
+可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mugeminorum.github.io/Mathematica-Music-Pack" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
 
 另外，`e-piano.nb` 是一个编写于 Mathematica 上的钢琴键盘，可作为虚拟钢琴来弹奏。
