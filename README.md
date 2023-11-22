@@ -87,6 +87,6 @@ For notes in the note part, 12-note scheme is unfriendly to us, it can be transf
     <img width="500" src="https://user-images.githubusercontent.com/20459298/233112569-3efd5cb1-87c3-44a6-b74b-357104055dd3.png"/>
 </div>
 
-Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mathmusic.pages.dev> for more details; Before compiling songs, please run the macro package first.
+Please refer to the demo code _Demo_BWV-1079.nb_ or visit our song library <https://mugeminorum.github.io/Mathematica-Music-Pack> for more details; Before compiling songs, please run the macro package first.
 
 Besides, the `e-piano.nb` is a piano keyboard UI, you can play it as a virtual piano on Mathematica.
