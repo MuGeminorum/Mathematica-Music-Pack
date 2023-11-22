@@ -1,7 +1,7 @@
 # Mathematica-Music-Pack
-
 [![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/master/LICENSE)
 [![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions)
+[![](https://img.shields.io/badge/bilibili-BV1r14y1G7E5-fc8bab.svg)](https://www.bilibili.com/video/BV1r14y1G7E5)
 
 A macro package for simplifying composition on Mathematica
 
