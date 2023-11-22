@@ -1,5 +1,4 @@
 # mathmusic
+[![Deploy static content to Pages](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions/workflows/static.yml/badge.svg?branch=web)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions/workflows/static.yml)
 
-[![Deploy static content to Pages](https://github.com/MuGeminorum/mathmusic/actions/workflows/static.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/mathmusic/actions/workflows/static.yml)
-
-A static webpage for displaying my Mathematica music
+A static webpage for displaying examples of Mathematica-Music-Pack
