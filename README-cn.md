@@ -2,8 +2,12 @@
 [![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/master/LICENSE)
 [![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions)
 
-## 用户手册
+## 维护
+```bash
+git clone git@gitee.com:MuGeminorum/Mathematica-Music-Pack.git
+```
 
+## 用户手册
 我们使用向量和数字来代替复杂的 SoundNote[] 系列函数。 经简化后的一首完整歌曲格式如下：
 
 ```
