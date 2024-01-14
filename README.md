@@ -5,8 +5,12 @@
 
 A macro package for simplifying composition on Mathematica
 
-## User manual
+## Maintenance
+```bash
+git clone git@gitee.com:MuGeminorum/Mathematica-Music-Pack.git
+```
 
+## User manual
 We use vectors and numbers to replace complicated SoundNote[] functions. A complete song has many sections, its format is as follow:
 
 ```
