@@ -1,10 +1,13 @@
 # Mathematica 编曲简化宏包
 [![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/master/LICENSE)
 [![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/workflows/CI/badge.svg?branch=master)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions)
+[![](https://img.shields.io/badge/bilibili-BV1r14y1G7E5-fc8bab.svg)](https://www.bilibili.com/video/BV1r14y1G7E5)
+[![](https://img.shields.io/badge/cnblog-17191082-075db3.svg)](https://www.cnblogs.com/MuGeminorum/p/17191082.html)
 
 ## 维护
 ```bash
 git clone git@gitee.com:MuGeminorum/Mathematica-Music-Pack.git
+cd Mathematica-Music-Pack
 ```
 
 ## 用户手册

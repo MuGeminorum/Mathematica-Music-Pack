@@ -2,12 +2,14 @@
 [![license](https://img.shields.io/github/license/MuGeminorum/Mathematica-Music-Pack.svg)](https://github.com/MuGeminorum/Mathematica-Music-Pack/blob/main/LICENSE)
 [![CI](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions/workflows/blank.yml/badge.svg?branch=main)](https://github.com/MuGeminorum/Mathematica-Music-Pack/actions/workflows/blank.yml)
 [![](https://img.shields.io/badge/bilibili-BV1r14y1G7E5-fc8bab.svg)](https://www.bilibili.com/video/BV1r14y1G7E5)
+[![](https://img.shields.io/badge/cnblog-17191082-075db3.svg)](https://www.cnblogs.com/MuGeminorum/p/17191082.html)
 
 A macro package for simplifying composition on Mathematica
 
 ## Maintenance
 ```bash
-git clone git@gitee.com:MuGeminorum/Mathematica-Music-Pack.git
+git clone git@github.com:MuGeminorum/Mathematica-Music-Pack.git
+cd Mathematica-Music-Pack
 ```
 
 ## User manual
