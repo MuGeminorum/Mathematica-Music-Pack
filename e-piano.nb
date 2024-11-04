@@ -1,0 +1,221 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 11.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      7135,        213]
+NotebookOptionsPosition[      6766,        198]
+NotebookOutlinePosition[      7181,        215]
+CellTagsIndexPosition[      7138,        212]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{
+   RowBox[{"dw", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "3"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "7"}], "]"}]}], "]"}], ",", "1", ",", "2"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"w", "[", "n_", "]"}], ":=", 
+    RowBox[{"Which", "[", 
+     RowBox[{
+      RowBox[{"n", "\[LessEqual]", 
+       RowBox[{"-", "1"}]}], ",", 
+      RowBox[{"-", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"dw", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", 
+           RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+      RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+      RowBox[{"Sum", "[", 
+       RowBox[{
+        RowBox[{"dw", "[", "k", "]"}], ",", 
+        RowBox[{"{", 
+         RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",", 
+      "0"}], "]"}]}], ";"}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"dh", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "2"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "5"}], "]"}]}], "]"}], ",", "3", ",", "2"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"h", "[", "n_", "]"}], ":=", 
+    RowBox[{"1", "+", 
+     RowBox[{"Which", "[", 
+      RowBox[{
+       RowBox[{"n", "\[LessEqual]", 
+        RowBox[{"-", "1"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          RowBox[{"dh", "[", "k", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+       RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"dh", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",",
+        "0"}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{"d", "[", "k_", "]"}], ":=", 
+   RowBox[{"If", "[", 
+    RowBox[{
+     RowBox[{"MemberQ", "[", 
+      RowBox[{
+       RowBox[{"{", 
+        RowBox[{"0", ",", "2"}], "}"}], ",", 
+       RowBox[{"Mod", "[", 
+        RowBox[{"k", ",", "5"}], "]"}]}], "]"}], ",", "2", ",", "1"}], 
+    "]"}]}], ";"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{
+   RowBox[{
+    RowBox[{"a", "[", "n_", "]"}], ":=", 
+    RowBox[{"0.5", "+", 
+     RowBox[{"Which", "[", 
+      RowBox[{
+       RowBox[{"n", "\[LessEqual]", 
+        RowBox[{"-", "1"}]}], ",", 
+       RowBox[{"-", 
+        RowBox[{"Sum", "[", 
+         RowBox[{
+          RowBox[{"d", "[", "k", "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"k", ",", 
+            RowBox[{"n", "+", "1"}], ",", "0"}], "}"}]}], "]"}]}], ",", 
+       RowBox[{"n", "\[GreaterEqual]", "1"}], ",", 
+       RowBox[{"Sum", "[", 
+        RowBox[{
+         RowBox[{"d", "[", "k", "]"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"k", ",", "1", ",", "n"}], "}"}]}], "]"}], ",", "True", ",",
+        "0"}], "]"}]}]}], ";"}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Graphics", "[", 
+  RowBox[{
+   RowBox[{"{", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"i", "=", "i"}], "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Button", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"White", ",", 
+             RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+             RowBox[{"Rectangle", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{"i", ",", "0"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{"i", "+", "1"}], ",", "6.6"}], "}"}]}], "]"}]}], 
+            "}"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"EmitSound", "[", 
+            RowBox[{"Sound", "[", 
+             RowBox[{"SoundNote", "[", 
+              RowBox[{
+               RowBox[{"w", "[", "i", "]"}], ",", "1", ",", 
+               "\"\<BrightPiano\>\""}], "]"}], "]"}], "]"}]}], 
+          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"i", ",", 
+         RowBox[{"-", "23"}], ",", "28"}], "}"}]}], "]"}], ",", 
+     "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"Table", "[", 
+      RowBox[{
+       RowBox[{"With", "[", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"j", "=", "j"}], "}"}], ",", "\[IndentingNewLine]", 
+         RowBox[{"Button", "[", "\[IndentingNewLine]", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"Black", ",", 
+             RowBox[{"EdgeForm", "[", "Black", "]"}], ",", 
+             RowBox[{"Rectangle", "[", 
+              RowBox[{
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"a", "[", "j", "]"}], "+", " ", "0.25"}], ",", 
+                 "2.3"}], "}"}], ",", 
+               RowBox[{"{", 
+                RowBox[{
+                 RowBox[{
+                  RowBox[{"a", "[", "j", "]"}], "+", "0.75"}], ",", "6.6"}], 
+                "}"}]}], "]"}]}], "}"}], ",", "\[IndentingNewLine]", 
+           RowBox[{"EmitSound", "[", 
+            RowBox[{"Sound", "[", 
+             RowBox[{"SoundNote", "[", 
+              RowBox[{
+               RowBox[{"h", "[", "j", "]"}], ",", "1", ",", 
+               "\"\<BrightPiano\>\""}], "]"}], "]"}], "]"}]}], 
+          "\[IndentingNewLine]", "]"}]}], "\[IndentingNewLine]", "]"}], ",", 
+       RowBox[{"{", 
+        RowBox[{"j", ",", 
+         RowBox[{"-", "16"}], ",", "19"}], "}"}]}], "]"}]}], "}"}], ",", 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"ImageSize", "\[Rule]", "1000"}]}], "]"}]}], "Input",ExpressionUUID\
+->"00604b80-880e-47ee-8acd-011b7c3cf928"]
+},
+WindowSize->{1138.8, 572.4},
+WindowMargins->{{0, Automatic}, {0, Automatic}},
+FrontEndVersion->"12.3 for Microsoft Windows (64-bit) (2021\:5e747\:670823\
+\:65e5)",
+StyleDefinitions->"Default.nb",
+ExpressionUUID->"ab72ee5e-e922-4775-b389-8fcb10778a45"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[558, 20, 6204, 176, 763, "Input",ExpressionUUID->"00604b80-880e-47ee-8acd-011b7c3cf928"]
+}
+]
+*)
+
