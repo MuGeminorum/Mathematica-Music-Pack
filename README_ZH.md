@@ -1,6 +1,7 @@
 # Mathematica 编曲简化宏包
 [![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/MuGemSt/Mathematica-Music-Pack/blob/main/LICENSE)
 [![bilibili](https://img.shields.io/badge/bilibili-BV1VmDZY9Ec3-fc8bab.svg)](https://www.bilibili.com/video/BV1VmDZY9Ec3)
+[![demo](https://img.shields.io/badge/web-mathmusic-dd1100.svg)](https://mathmusic.netlify.app)
 
 ## 维护
 ```bash
