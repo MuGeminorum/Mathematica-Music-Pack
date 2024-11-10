@@ -37,9 +37,9 @@
     {
         "id": "6",
         "title": "Monument",
-        "author": "Monet Joe",
+        "author": "Me",
         "duration": "108",
-        "hide": true
+        "pid": 10
     },
     {
         "id": "7",
