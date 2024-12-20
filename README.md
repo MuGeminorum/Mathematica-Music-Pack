@@ -1,7 +1,7 @@
 # Mathematica Music Package
 [![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/MuGemSt/mathematica_music_pack/blob/main/LICENSE)
 [![bilibili](https://img.shields.io/badge/bilibili-BV1VmDZY9Ec3-fc8bab.svg)](https://www.bilibili.com/video/BV1VmDZY9Ec3)
-[![demo](https://img.shields.io/badge/web-mathmusic-dd1100.svg)](https://mathmusic.netlify.app)
+[![demo](https://img.shields.io/badge/Netlify-MathMusic-dd1100.svg)](https://mathmusic.netlify.app)
 
 A macro package for simplifying composition on Mathematica
 
