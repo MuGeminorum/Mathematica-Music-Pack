@@ -1,12 +1,12 @@
 # Mathematica 编曲简化宏包
-[![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/MuGemSt/Mathematica-Music-Pack/blob/main/LICENSE)
+[![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/MuGemSt/mathematica_music_pack/blob/main/LICENSE)
 [![bilibili](https://img.shields.io/badge/bilibili-BV1VmDZY9Ec3-fc8bab.svg)](https://www.bilibili.com/video/BV1VmDZY9Ec3)
 [![demo](https://img.shields.io/badge/web-mathmusic-dd1100.svg)](https://mathmusic.netlify.app)
 
 ## 维护
 ```bash
-git clone git@github.com:MuGemSt/Mathematica-Music-Pack.git
-cd Mathematica-Music-Pack
+git clone git@github.com:MuGemSt/mathematica_music_pack.git
+cd mathematica_music_pack
 ```
 
 ## 用户手册
@@ -88,6 +88,6 @@ player[track1, 音色1, track2, 音色2, ...]
     <img width="500" src="https://user-images.githubusercontent.com/20459298/233112569-3efd5cb1-87c3-44a6-b74b-357104055dd3.png"/>
 </div>
 
-可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mathmusic.netlify.app" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _Mathematica-Music-Pack.nb_
+可参考示例代码 _Demo_BWV-1079.nb_ 或浏览 <a href="https://mathmusic.netlify.app" target="_blank">我的Mathematica音乐库</a> 来弄清具体用法;<br>生成乐谱之前请先运行 _mathematica_music_pack.nb_
 
 另外，`e-piano.nb` 是一个编写于 Mathematica 上的钢琴键盘，可作为虚拟钢琴来弹奏。
