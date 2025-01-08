@@ -1,13 +1,13 @@
 # Mathematica Music Package
-[![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/MuGemSt/mathematica_music_pack/blob/main/LICENSE)
-[![bilibili](https://img.shields.io/badge/bilibili-BV1VmDZY9Ec3-fc8bab.svg)](https://www.bilibili.com/video/BV1VmDZY9Ec3)
+[![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/Genius-Society/mathematica_music_pack/blob/main/LICENSE)
+[![bilibili](https://img.shields.io/badge/bilibili-BV14krgYJEJU-fc8bab.svg)](https://www.bilibili.com/video/BV14krgYJEJU)
 [![demo](https://img.shields.io/badge/Netlify-MathMusic-dd1100.svg)](https://mathmusic.netlify.app)
 
 A macro package for simplifying composition on Mathematica
 
 ## Maintenance
 ```bash
-git clone git@github.com:MuGemSt/mathematica_music_pack.git
+git clone git@github.com:Genius-Society/mathematica_music_pack.git
 cd mathematica_music_pack
 ```
 
