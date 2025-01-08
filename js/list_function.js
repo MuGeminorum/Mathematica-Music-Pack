@@ -34,7 +34,7 @@ function getURL(index, title, author, mode) {
 			break;
 
 		case 3:
-			url = "https://www.bilibili.com/video/BV1VmDZY9Ec3?p=" + index;
+			url = "https://www.bilibili.com/video/BV14krgYJEJU?p=" + index;
 			break;
 
 		case 4:
