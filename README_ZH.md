@@ -1,6 +1,6 @@
 # Mathematica 编曲简化宏包
 [![license](https://img.shields.io/badge/license-CC_BY_NC_SA-74c853.svg)](https://github.com/Genius-Society/mathematica_music_pack/blob/main/LICENSE)
-[![demo](https://img.shields.io/badge/web-mathmusic-dd1100.svg)](https://mathmusic.netlify.app)
+[![demo](https://img.shields.io/badge/netlify-mathmusic-dd1100.svg)](https://mathmusic.netlify.app)
 [![bilibili](https://img.shields.io/badge/bilibili-BV14krgYJEJU-fc8bab.svg)](https://www.bilibili.com/video/BV14krgYJEJU)
 
 ## 维护
