@@ -70,7 +70,7 @@ The note part has melodies and chords, which consists of different kinds of note
 
 <div align=center><b>Table 3: Input formats of notes (表 3: 音符的输入格式)</b><br></div>
 
-| Effect        | Format                                                                | Remark                                                                                                                                    |
+| Effect 音效   | Format 格式                                                           | Remark 符号                                                                                                                               |
 | :------------ | :-------------------------------------------------------------------- | :---------------------------------------------------------------------------------------------------------------------------------------- |
 | Rest 休止符   | *{l}*                                                                 | *l* is duration (为时值);                                                                                                                 |
 | Tone 音符     | *{n, l}*                                                              | *n* is note value (为音高);                                                                                                               |
